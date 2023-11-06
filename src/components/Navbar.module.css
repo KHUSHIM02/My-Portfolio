@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background: #181818;
+    padding: 1rem 2rem;
+    transition: opacity 0.4s ease;
+}
+.transparent {
+    opacity: 0.2;
+}
+svg {
+    height: 80px;
+    position: absolute;
+    width: 80px;
+}
+li {
+    list-style: none;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: azure;
+    font-weight: 600;
+}
+a > img {
+    height: 18px;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+.navHead {
+    font-size: 30px;
+    font-weight: 600;
+}
+.navMenu {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.hamburger {
+    display: none;
+    width: 20%;
+    position: relative;
+    top: 0;
+}
+@media screen and (min-width: 669px) {
+    .navEle {
+        margin-left: 2rem;
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 668px) {
+    .navMenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        background-color: #1f3b4d;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navMenu.active {
+        opacity: 1;
+        right: 0;
+        transform: scale(1);
+    }
+    .navItem {
+        margin: 2.5rem 0;
+    }
+    .plates {
+        width: 320px;
+    }
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        z-index: 2;
+        background: transparent;
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,184 @@
+footer {
+    display: flex;
+    width: 100%;
+    z-index: 5;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background: rgb(60, 60, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+@media screen and (max-width: 668px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-device-width: 668px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.contacts {
+    display: flex;
+    width: 40%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+@media screen and (max-width: 668px) {
+    .contacts {
+        width: 100%;
+    }
+}
+@media screen and (max-device-width: 668px) {
+    .contacts {
+        width: 100%;
+    }
+}
+.contactBox {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+.contactHeading {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgCredentials {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.imgCredentials > a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.imgCredentials > a:hover {
+    transform: scale(1.1);
+}
+
+.linkImgs {
+    display: flex;
+    flex-direction: row;
+}
+.image {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        object-fit: fill;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px 20px 10px 10px;
+    transition: all 0.3s ease;
+}
+.image:hover {
+    filter: dropshadow(
+        rgba(253, 253, 253, 0.25) 0px 54px 55px,
+        rgba(255, 254, 254, 0.12) 0px -12px 30px,
+        rgba(255, 255, 255, 0.12) 0px 4px 6px,
+        rgba(255, 254, 254, 0.17) 0px 12px 13px,
+        rgba(255, 255, 255, 0.09) 0px -3px 5px
+    );
+    transform: scale(1.2);
+}
+.emailme {
+    display: flex;
+    width: 60%;
+    height: inherit;
+    padding: 10px;
+    margin: 0;
+}
+@media screen and (max-width: 668px) {
+    .emailme {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-device-width: 668px) {
+    .emailme {
+        width: 100%;
+        justify-content: center;
+    }
+}
+form {
+    width: 100%;
+}
+form input,
+form textarea {
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: rgb(60, 60, 60, 0.9);
+    border-radius: 10px;
+}
+.sub {
+    width: fit-content;
+    height: auto;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 668px) {
+    form {
+        display: flex;
+        width: 73%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    form input,
+    form textarea {
+        width: 100%;
+    }
+    form > p {
+        display: flex;
+        width: 100%;
+    }
+}
+@media screen and (max-device-width: 668px) {
+    form {
+        display: flex;
+        width: 73%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    form input,
+    form textarea {
+        width: 100%;
+    }
+    form > p {
+        display: flex;
+        width: 100%;
+    }
+}
+
+/* .popup {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 20px;
+    font-weight: bold;
+    bottom: 5vh;
+    left: 50%;
+    color: aliceblue;
+    background-color: #656568;
+    transform: translateX(-50%);
+    transition: opacity 0.5s;
+} */

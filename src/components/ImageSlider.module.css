@@ -1,0 +1,49 @@
+.slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+button {
+  display: flex;
+  position: absolute;
+  height: 14%;
+  width: 7%;
+  border-radius: 50%;
+}
+.rightArrow {
+    right: 32px;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.leftArrow {
+    left: 32px;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transform: translate(-25%, -50%);
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top:50%;
+}
+

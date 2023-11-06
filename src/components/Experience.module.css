@@ -1,0 +1,125 @@
+.myWorkExperienceParent {
+    display: flex;
+    position: relative;
+    background-color: aquamarine;
+    width: 100%;
+    height: 80vh;
+    cursor: pointer;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: left; */
+    font-size: 35px;
+    color: green;
+}
+
+.myWorkExperience1 {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 117px;
+    font-size: 60px;
+    align-items: center;
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* width: 749px; */
+    /* height: 89px; */
+}
+.fixieTechnologiesParent {
+    display: flex;
+    position: relative;
+    top: 194px;
+    left: 6px;
+    width: 444px;
+    height: 108px;
+}
+
+.fixieTechnologies {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 293px;
+    height: 59px;
+}
+.june20201 {
+    position: relative;
+    top: 59px;
+    left: 0px;
+    font-size: 25px;
+    font-family: Arial;
+    display: inline-block;
+    width: 444px;
+    height: 49px;
+}
+.naxumParent {
+    position: relative;
+    top: 437px;
+    left: 0px;
+    width: 444px;
+    height: 108px;
+}
+.frontEndDeveloper {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.myResponsiblitiesAre1 {
+    position: relative;
+    top: 59px;
+    left: 0px;
+    font-size: 25px;
+    font-family: Arial;
+    display: inline-block;
+    width: 444px;
+    height: 91px;
+}
+.frontEndDeveloperParent {
+    position: relative;
+    top: 194px;
+    left: 643px;
+    width: 444px;
+    height: 150px;
+}
+.uiDesigner {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 293px;
+    height: 48px;
+}
+.iWorkedAs1 {
+    position: relative;
+    top: 59px;
+    left: 0px;
+    font-size: 25px;
+    font-family: Arial;
+    display: inline-block;
+    width: 444px;
+    height: 120px;
+}
+.uiDesignerParent {
+    position: relative;
+    top: 437px;
+    left: 643px;
+    width: 444px;
+    height: 179px;
+}
+.groupChild {
+    position: relative;
+    top: 194px;
+    left: 444px;
+    width: 93.71px;
+    height: 335.71px;
+}
+.image6Icon {
+    position: relative;
+    top: -183px;
+    left: 325.33px;
+    width: 971.78px;
+    height: 712.75px;
+    object-fit: cover;
+    display: none;
+    opacity: 0.6;
+}
+

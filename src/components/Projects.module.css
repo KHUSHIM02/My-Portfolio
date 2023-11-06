@@ -1,0 +1,66 @@
+:root {
+    --ht: 70vh;
+}
+
+.container {
+    height: 70vh;
+    overflow: hidden;
+    background: rgb(24, 170, 200);
+    background: linear-gradient(
+        90deg,
+        rgba(24, 170, 200, 0.9289916650253851) 0%,
+        rgba(46, 208, 219, 0.9037815809917717) 52%,
+        rgba(22, 222, 228, 0.8953782196472339) 100%
+    );
+}
+.info {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.slider {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.slide {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: black; */
+    flex-direction: column;
+    padding: 4rem;
+}
+.left {
+    bottom: 205%;
+}
+
+.project {
+    display: flex;
+    position: absolute;
+    border-radius: 2rem;
+    width: 70%;
+    height: calc(45 * var(--ht) / 100);
+    background-color: gray;
+}
+
+.invert {
+    transform: rotate(180deg);
+}
+
+.btn {
+    display: flex;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 1;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
