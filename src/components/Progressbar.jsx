@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRef } from 'react';
-import { animate, motion, transform, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 const Progressbar = (props) => {
 

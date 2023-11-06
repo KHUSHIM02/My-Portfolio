@@ -1,19 +1,16 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from "framer-motion";
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
-// import Experience from './components/Experience';
 
 import img from './assets/profilePic.jpeg';
 
 import ImageSlider from './components/ImageSlider';
-import Experience from './components/Experience';
-// import slides from './components/SliderData';
 
 
 

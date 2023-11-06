@@ -1,14 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import nbar from "./Navbar.module.css";
-import { easeIn, motion, useInView } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import Hamburger from "./Hamburger";
 
 export default function Navbar(props) {
 
     const [hambergur, setHambergur] = useState(false);
     const [active, setActive] = useState(``);
-    const ref = useRef(null);
-    // const isInView = useInView(ref, { once: true });
 
     const navVariants = {
         initial: { y: -100 },
@@ -25,9 +23,8 @@ export default function Navbar(props) {
         { title: `${props.item7}`, id: 7, link: `${props.link7}` }
     ];
     const itemList = items.map(item => {
-        if (item.title != "")
+        if (item.title !== "")
             return (<motion.li
-                ref={ref}
                 variants={navVariants}
                 initial="initial"
                 animate="animate"

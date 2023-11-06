@@ -1,10 +1,7 @@
 import React from 'react';
-import styles from './Contact.module.css';
-import telegram from '../assets/telegram.png';
 import email from '../assets/email.png';
 import github from '../assets/github.png'
 import phone from '../assets/phone.png'
-import linkedin from '../assets/linkedin.png'
 
 const Contact = () => {
     return (
