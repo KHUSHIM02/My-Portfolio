@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from "framer-motion";
-import { BrowserRouter} from "react-router-dom";
+// import { BrowserRouter} from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
@@ -72,7 +72,7 @@ const App = () => {
 
 	return (
 		<>
-			<BrowserRouter>
+			{/* <BrowserRouter> */}
 				<Navbar item1="About" link1='#about' link2='#skills' item2='Skills' item3='Projects' link3='#projects' item4='Contacts' link4='#contacts' />
 				<Intro name='Khushi Mishra' link='http://www.linkedin.com/in/khushi-mishra-323986202' buttonTag='LinkedIn' rotateList={['Programmer', 'Researcher', 'MMA Fighter']} />
 				<div className="flex relative w-full h-full bg-black flex-col bg-opacity-30">
@@ -110,7 +110,7 @@ const App = () => {
 						<Contact />
 					</section>
 				</div>
-			</BrowserRouter>
+			{/* </BrowserRouter> */}
 		</>
 	)
 }
