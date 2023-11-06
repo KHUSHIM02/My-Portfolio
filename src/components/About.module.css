@@ -40,7 +40,7 @@
     position: relative;
     z-index: 1000;
     
-    &::before,
+    /* &::before,
     &::after {
         background-image: linear-gradient(-180deg, #a1deff 0%, #5ea3db 97%);
         content: "";
@@ -60,10 +60,10 @@
         animation-name: hoverPop;
         animation-duration: 0.4s;
         
-        /* img {
+        img {
             box-shadow: 2px 2px 4px 0px rgba(10, 12, 15, 0.27);
             box-shadow: 0px 0px 30px 0px rgba(10, 12, 15, 0.27);
-        } */
+        }
         &::before {
             animation: slick-hover-2 3s 0.4s linear infinite;
             transform: translateY(-20px) translateX(-20px);
@@ -72,19 +72,7 @@
             animation: slick-hover 3s 0.4s linear infinite reverse;
             transform: translateY(20px) translateX(20px);
         }
-    }
-}
-.item > img {
-    object-fit: cover;
-    height: 100%;
-    width: auto;
-    border-radius: var(--rad);
-    outline: solid 2px #eee;
-    outline-offset: 5px;
-}
-.item:hover img {
-    box-shadow: 2px 2px 4px 0px rgba(10, 12, 15, 0.27);
-    box-shadow: 0px 0px 30px 0px rgba(10, 12, 15, 0.27);
+    } */
 }
 
 @keyframes hoverPop {
