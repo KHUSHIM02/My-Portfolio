@@ -11,16 +11,16 @@ const Contact = () => {
                 <div className="flex absolute w-[45%] h-0.5 top-1/2 left-0 bg-amber-300"></div>
                 <div className="flex absolute w-[15%] top-1/2 right-[15%] sm:rotate-90 border border-white"></div>
             </div>
-            <div className="flex relative sm:w-3/5 sm:flex-row w-full flex-col h-full">
-                <div className="flex relative h-full w-1/3 items-center gap-4">
+            <div className="flex relative sm:w-3/5 sm:flex-row w-full flex-col justify-center items-center h-full">
+                <div className="flex relative h-full w-full sm:w-1/3 items-center gap-4">
                     <img className='flex w-[10%] h-auto' src={email} alt="" />
                     khushimish26@gmail.com
                 </div>
-                <div className="flex relative h-full items-center gap-4 w-1/3">
+                <div className="flex relative h-full items-center gap-4 w-full sm:w-1/3">
                     <img className='flex w-[10%] h-auto' src={phone} alt="" />
                     +91-8860914595
                 </div>
-                <div className="flex relative h-full w-1/3 items-center gap-4">
+                <div className="flex relative h-full w-full sm:w-1/3 items-center gap-4">
                     <img className='flex w-[10%] h-auto' src={github} alt="" />
                     <a href="https://github.com/KHUSHIM02/"  >KHUSHIM02</a>
                 </div>
