@@ -40,7 +40,7 @@ const ImageSlider = (props) => {
                         key={index}
                     >
                         <div className="flex w-full h-[70vh] p-8 flex-col -translate-x-1/4 justify-between items-center bg-sky-600">
-                            <div className="flex relative w-full text-5xl font-bold text-center justify-center align-center">
+                            <div className="flex relative w-full sm:text-5xl text-l font-bold text-center justify-center align-center">
                                 {slide.name}
                             </div>
                             <div className="flex relative w-[60%] text-xl justify-center ">
