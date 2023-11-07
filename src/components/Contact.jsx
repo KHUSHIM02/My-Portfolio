@@ -5,7 +5,7 @@ import phone from '../assets/phone.png'
 
 const Contact = () => {
     return (
-        <div className='flex relative w-full h-[20vh] justify-between items-center'>
+        <div className='flex flex-col sm:flex-row relative w-full h-[20vh] justify-between items-center'>
             <div className="flex relative sm:w-2/5 w-full h-full justify-center">
                 <div className="flex relative w-full justify-center items-center text-4xl font-bold">Khushi Mishra</div>
                 <div className="flex absolute w-[45%] h-0.5 top-1/2 left-0 bg-amber-300"></div>

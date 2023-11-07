@@ -100,7 +100,7 @@ const App = () => {
 
 					{/* <Experience /> */}
 
-					<section className=' flex relative flex-col left-1/2 -translate-x-1/2 w-[65%] h-auto p-8 justify-center items-center' id='projects'>
+					<section className=' flex relative flex-col left-1/2 -translate-x-1/2 w-full sm:w-[65%] h-auto p-8 justify-center items-center' id='projects'>
 						<motion.div ref={ref3} initial={initialR} animate={isInView3 ? animate : initialR} transition={{ duration: 0.8 }} className={`heading flex relative w-10/12 text-5xl py-8 sm:pt-8 justify-end`}>
 							<span className="w-fit"> PROJECTS </span>
 						</motion.div>
