@@ -9,7 +9,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 1);
-    background-color: #95dbb8;
+    background-color: gray;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -19,6 +19,8 @@
 }
 * {
     box-sizing: border-box;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
     width: 100%;
     margin: 0%;
     padding: 0%;
@@ -37,7 +39,6 @@ a:hover {
 body {
     min-width: 320px;
     min-height: 100vh;
-    /* background-color: #95dbb8; */
     background: rgb(255, 111, 216);
     background: linear-gradient(
         90deg,
