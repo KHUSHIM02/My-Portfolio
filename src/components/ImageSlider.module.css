@@ -12,24 +12,20 @@ button {
   display: flex;
   position: absolute;
   border: none;
-  height: 14%;
-  width: 7%;
+  height: 100%;
+  width: 10%;
   border-radius: 50%;
-}
-.rightArrow {
-    right: 10%;
-    background: transparent;
+  background: transparent;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+}
+.rightArrow {
+    right: 0%;
 }
 
 .leftArrow {
-    left: 10%   ;
-    background: transparent;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
+    left: 0%;
 }
 
 .slide {
@@ -48,3 +44,10 @@ button {
     top:50%;
 }
 
+@media screen and (max-width: 668px) {
+        button{
+            /* height: 20%; */
+            width: 15%;
+            padding: 0;
+        }
+}
