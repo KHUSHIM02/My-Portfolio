@@ -19,9 +19,8 @@
 }
 * {
     box-sizing: border-box;
-    overflow: hidden;
     color: rgba(255, 255, 255, 1);
-    width: 100%;
+    /* width: 100%; */
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
@@ -37,8 +36,8 @@ a:hover {
 }
 
 body {
-    min-width: 320px;
-    min-height: 100vh;
+    /* min-width: 320px;
+    min-height: 100vh; */
     background: rgb(255, 111, 216);
     background: linear-gradient(
         90deg,
@@ -70,7 +69,7 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
         background-color: #ffffff;
@@ -81,4 +80,4 @@ button:focus-visible {
     button {
         background-color: #f9f9f9;
     }
-}
+} */
