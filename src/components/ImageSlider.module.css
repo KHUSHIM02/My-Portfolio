@@ -11,6 +11,7 @@
 button {
   display: flex;
   position: absolute;
+  border: none;
   height: 14%;
   width: 7%;
   border-radius: 50%;
