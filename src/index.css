@@ -37,8 +37,13 @@ a:hover {
 body {
     min-width: 320px;
     min-height: 100vh;
-    background-color: #95dbb8;
-
+    /* background-color: #95dbb8; */
+    background: rgb(255, 111, 216);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 111, 216, 1) 0%,
+        rgba(56, 19, 194, 1) 100%
+    );
 }
 
 h1 {

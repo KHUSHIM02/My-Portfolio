@@ -75,7 +75,7 @@ const App = () => {
 			{/* <BrowserRouter> */}
 				<Navbar item1="About" link1='#about' link2='#skills' item2='Skills' item3='Projects' link3='#projects' item4='Contacts' link4='#contacts' />
 				<Intro name='Khushi Mishra' link='http://www.linkedin.com/in/khushi-mishra-323986202' buttonTag='LinkedIn' rotateList={['Programmer', 'Researcher', 'MMA Fighter']} />
-				<div className="flex relative w-full h-full bg-black flex-col bg-opacity-30">
+				<div className="flex relative w-full h-full bg-black flex-col bg-opacity-70">
 					<section className='flex flex-col relative w-full sm:w-5/6 sm:left-1/2 sm:-translate-x-1/2' id='about'>
 						<motion.div ref={ref} initial={initialR} animate={isInView ? animate : initialR} transition={{ duration: 0.8 }} className={`heading flex relative w-10/12 text-5xl py-8 sm:pt-8 justify-end`}>
 							<span className="w-fit"> ABOUT </span>
