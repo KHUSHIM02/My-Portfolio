@@ -71,7 +71,7 @@ const App = () => {
 	]
 
 	return (
-		<>
+		<div className='overflow-hidden'>
 			{/* <BrowserRouter> */}
 				<Navbar item1="About" link1='#about' link2='#skills' item2='Skills' item3='Projects' link3='#projects' item4='Contacts' link4='#contacts' />
 				<Intro name='Khushi Mishra' link='http://www.linkedin.com/in/khushi-mishra-323986202' buttonTag='LinkedIn' rotateList={['Programmer', 'Researcher', 'MMA Fighter']} />
@@ -111,7 +111,7 @@ const App = () => {
 					</section>
 				</div>
 			{/* </BrowserRouter> */}
-		</>
+		</div>
 	)
 }
 

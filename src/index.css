@@ -20,7 +20,7 @@
 * {
     box-sizing: border-box;
     color: rgba(255, 255, 255, 1);
-    /* width: 100%; */
+    width: 100%;
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@ a:hover {
 }
 
 body {
-    max-width: 100dvb;
+    min-width: 320px;
     min-height: 100vh;
     background: rgb(255, 111, 216);
     background: linear-gradient(

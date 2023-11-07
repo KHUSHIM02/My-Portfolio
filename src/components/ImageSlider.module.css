@@ -17,7 +17,7 @@ button {
   border-radius: 50%;
 }
 .rightArrow {
-    right: 32px;
+    right: 10%;
     background: transparent;
     z-index: 10;
     cursor: pointer;
@@ -25,7 +25,7 @@ button {
 }
 
 .leftArrow {
-    left: 32px;
+    left: 10%   ;
     background: transparent;
     z-index: 10;
     cursor: pointer;
