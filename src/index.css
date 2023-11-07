@@ -23,7 +23,6 @@
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
-    background-color: #95dbb8;
 }
 
 a {
@@ -38,6 +37,8 @@ a:hover {
 body {
     min-width: 320px;
     min-height: 100vh;
+    background-color: #95dbb8;
+
 }
 
 h1 {
