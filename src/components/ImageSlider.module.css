@@ -13,7 +13,7 @@ button {
     position: absolute;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: solid 0px;
     height: 100%;
     width: 10%;
     background: transparent;
