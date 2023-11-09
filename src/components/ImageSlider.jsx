@@ -31,8 +31,8 @@ const ImageSlider = (props) => {
 
     return (
         <motion.section ref={ref} initial={{top: `100%`, scale:0}} animate={isInView ? {top:0, scale:1} : {top:`100%`, scale:0}} transition={{duration:0.8}} className={`${style.slider}`} >
-            <button className={`${style.leftArrow}`} onClick={prevSlide} > <img src={left} alt="" /> </button>
-            <button className={`${style.rightArrow}`} onClick={nextSlide}> <img src={right} alt="" /> </button>
+            <div className={`${style.btn} ${style.leftArrow}`} onClick={prevSlide} > <img src={left} alt="" /> </div>
+            <div className={`${style.btn} ${style.rightArrow}`} onClick={nextSlide}> <img src={right} alt="" /> </div>
             {slides.map((slide, index) => {
                 return (
                     <div

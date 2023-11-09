@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-button {
+.btn {
     display: flex;
     position: absolute;
     justify-content: center;
