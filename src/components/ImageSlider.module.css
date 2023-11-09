@@ -9,13 +9,14 @@
 }
 
 button {
-  display: flex;
-  position: absolute;
-  border: none;
-  height: 100%;
-  width: 10%;
-  border-radius: 50%;
-  background: transparent;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 100%;
+    width: 10%;
+    background: transparent;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -41,13 +42,13 @@ button {
     width: 100%;
     height: 100%;
     left: 50%;
-    top:50%;
+    top: 50%;
 }
 
 @media screen and (max-width: 668px) {
-        button{
-            /* height: 20%; */
-            width: 15%;
-            padding: 0;
-        }
+    button {
+        /* height: 20%; */
+        width: 15%;
+        padding: 0;
+    }
 }
