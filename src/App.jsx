@@ -9,6 +9,10 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 import img from './assets/profilePic.jpeg';
+import personality from './assets/personalityImg.jpeg';
+import poison from './assets/poisonWater.jpeg';
+import androidMalware from './assets/androidMalware.jpeg';
+import blockchain from './assets/blockchain.jpeg';
 
 import ImageSlider from './components/ImageSlider';
 
@@ -64,10 +68,10 @@ const App = () => {
 
 
 	const projects = [
-		{ id: 0, name: `PERSONALITY PREDICTOR`, languages: ' Python ML AI Numpy Keras Pytorch ', desc: ` Developed a personality prediction model by using the social media post of users. Used data mining techniques and natural language processing techniques such as lemmatization to process the raw data and trained certain algorithms such as KNN, SVM, random forest, etc., and then tested them to find the accuracy of the model.` },
-		{ id: 1, name: 'EFFECTIVENESS OF POISONED WATER ', languages: ' Python  ML AI Numpy  Keras   Pytorch  ', desc: ' Researched and implemented machine learning algorithms to detect poisoned water by differentiating it from clean water. Utilized two labels and four training settings. Verified accuracy by incorporating Gaussian and white noise etc, retraining the model, and obtaining promising results. Technologies used: pytorch, numpy, pandas, data mining' },
-		{ id: 2, name: `BLOCKCHAIN’S INTEGRATION USING IOT AND CLOUD COMPUTING `, languages: `Solidity Smart Contracts  Decentralization IOT cloud computing digital forensics`, desc: `Blockchain combines computer tech, encryption, smart contracts, consensus, and P2P networks for transparent, reliable, and private interactions. This research analyzes blockchain architecture, consensus methods, and ecosystem to clarify its potential impact across industries, shaping its future.` },
-		{ id: 3, name: 'ANDROID MALWARE DETECTOR ', languages: `API ML Algorithm  Python permissions`, desc: `This study focuses on the Android mobile operating system's vulnerability to malicious applications due to its open-source nature. The research proposes an innovative method using machine learning to identify malicious Android apps by analyzing permissions and API calls. This static analysis approach demonstrates effectiveness in distinguishing malware from benign apps. The increasing popularity of Android has led to a surge in malware distribution, posing threats like phishing, banking trojans, and more. The research aims to address the growing challenge of Android malware detection.` }
+		{ id: 0, name: `PERSONALITY PREDICTOR`, link: `${personality}`, languages: ' Python ML AI Numpy Keras Pytorch ', desc: ` Developed a personality prediction model by using the social media post of users. Used data mining techniques and natural language processing techniques such as lemmatization to process the raw data and trained certain algorithms such as KNN, SVM, random forest, etc., and then tested them to find the accuracy of the model.` },
+		{ id: 1, name: 'EFFECTIVENESS OF POISONED WATER ', link: `${poison}`, languages: ' Python  ML AI Numpy  Keras   Pytorch  ', desc: ' Researched and implemented machine learning algorithms to detect poisoned water by differentiating it from clean water. Utilized two labels and four training settings. Verified accuracy by incorporating Gaussian and white noise etc, retraining the model, and obtaining promising results. Technologies used: pytorch, numpy, pandas, data mining' },
+		{ id: 2, name: `BLOCKCHAIN’S INTEGRATION USING IOT AND CLOUD COMPUTING `, link: `${blockchain}`, languages: `Solidity Smart Contracts  Decentralization IOT cloud computing digital forensics`, desc: `Blockchain combines computer tech, encryption, smart contracts, consensus, and P2P networks for transparent, reliable, and private interactions. This research analyzes blockchain architecture, consensus methods, and ecosystem to clarify its potential impact across industries, shaping its future.` },
+		{ id: 3, name: 'ANDROID MALWARE DETECTOR ', link: `${androidMalware}`, languages: `API ML Algorithm  Python permissions`, desc: `This study focuses on the Android mobile operating system's vulnerability to malicious applications due to its open-source nature. The research proposes an innovative method using machine learning to identify malicious Android apps by analyzing permissions and API calls. This static analysis approach demonstrates effectiveness in distinguishing malware from benign apps. The increasing popularity of Android has led to a surge in malware distribution, posing threats like phishing, banking trojans, and more. The research aims to address the growing challenge of Android malware detection.` }
 	]
 
 	return (

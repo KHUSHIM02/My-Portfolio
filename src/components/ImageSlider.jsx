@@ -3,6 +3,7 @@ import style from './ImageSlider.module.css';
 import { motion, useInView } from 'framer-motion';
 import left from '../assets/leftDouble.svg';
 import right from '../assets/rightDouble.svg';
+// import img from '../assets/personalityImg.jpeg'
 
 
 
@@ -14,7 +15,7 @@ const ImageSlider = (props) => {
     const length = slides.length;
 
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: true});
+    const isInView = useInView(ref, { once: true });
 
 
     const nextSlide = () => {
@@ -30,7 +31,7 @@ const ImageSlider = (props) => {
     }
 
     return (
-        <motion.section ref={ref} initial={{top: `100%`, scale:0}} animate={isInView ? {top:0, scale:1} : {top:`100%`, scale:0}} transition={{duration:0.8}} className={`${style.slider}`} >
+        <motion.section ref={ref} initial={{ top: `100%`, scale: 0 }} animate={isInView ? { top: 0, scale: 1 } : { top: `100%`, scale: 0 }} transition={{ duration: 0.8 }} className={`${style.slider}`} >
             <div className={`${style.btn} ${style.leftArrow}`} onClick={prevSlide} > <img src={left} alt="" /> </div>
             <div className={`${style.btn} ${style.rightArrow}`} onClick={nextSlide}> <img src={right} alt="" /> </div>
             {slides.map((slide, index) => {
@@ -39,21 +40,29 @@ const ImageSlider = (props) => {
                         className={index === current ? `${style.slide} ${style.active}` : `${style.slide}`}
                         key={index}
                     >
-                        <div className="flex w-full h-[70vh] p-8 flex-col -translate-x-1/4 justify-between items-center bg-sky-600">
-                            <div className="flex relative w-full sm:text-5xl text-lg font-bold text-center justify-center align-center">
-                                {slide.name}
-                            </div>
-                            <div className="flex relative w-full p-1 sm:p-0 sm:w-[60%] text-sm sm:text-xl justify-center ">
-                                {slide.desc}
-                            </div>
-                            <div className="flex relative w-[80%] text-sm sm:text-xl justify-center gap-8">
-                                {slide.languages}
-                            </div>
+                        <div className="flex w-full h-[70vh] p-8 flex-col -translate-x-1/4 justify-between items-center bg-slate-800"  >
+                            <div className="flex absolute top-0 w-full h-full" style={{
+                                backgroundImage: `url(${slide.link})`,
+                                opacity: `25%`,
+                                backgroundPosition: `center`,
+                                backgroundRepeat: `no-repeat`,
+                                backgroundAttachment: `fixed`,
+                                backgroundSize: `cover` 
+                        }}></div>
+                        <div className="flex relative w-full sm:text-5xl text-lg font-bold text-center justify-center align-center">
+                            {slide.name}
+                        </div>
+                        <div className="flex relative w-full p-1 sm:p-0 sm:w-[60%] text-sm sm:text-xl justify-center ">
+                            {slide.desc}
+                        </div>
+                        <div className="flex relative w-[80%] text-sm sm:text-xl justify-center gap-8">
+                            {slide.languages}
                         </div>
                     </div>
-                );
-            })}
-        </motion.section>
+                    </div>
+    );
+})}
+        </motion.section >
     );
 };
 

@@ -11,6 +11,10 @@
     color: rgba(255, 255, 255, 1);
     background-color: red;
 
+    /* font-family: "Pacifico", serif; */
+    /* font-family: 'Lobster Two'; */
+    font-family: 'Signika';
+    /* font-family: 'Akaya Telivigala'; */
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
